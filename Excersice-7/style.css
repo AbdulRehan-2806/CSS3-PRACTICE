@@ -1,0 +1,12 @@
+a {
+    color: brown;
+    font-size: 16px;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: color 0.3s ease, font-size 0.3s ease, border-color 0.3s ease;
+}
+a:hover {
+    color: darkred;
+    font-size: 25px;
+    border-color: darkred;
+}
