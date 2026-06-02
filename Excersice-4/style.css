@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    padding: 20px;
+    border-bottom: 1px solid #333;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h1 {
+    font-size: 24px;
+}
+
+.menu-toggle {
+    display: none;
+    background-color: #fff;
+    border: 1px solid #333;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    width: 200px;
+    padding: 20px 0;
+    border-right: 1px solid #333;
+}
+
+.nav-menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-item {
+    display: block;
+    padding: 12px 15px;
+    text-decoration: none;
+    border-left: 3px solid transparent;
+}
+
+.nav-item.active {
+    border-left-color: #333;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.section {
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #333;
+}
+
+.section h2 {
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.card {
+    border: 1px solid #333;
+    padding: 15px;
+    text-align: center;
+}
+
+.card h3 {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.card-number {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th,
+.table td {
+    border: 1px solid #333;
+    padding: 10px;
+    text-align: left;
+}
+
+.table th {
+    font-weight: bold;
+}
+
+.status {
+    display: inline-block;
+    padding: 4px 8px;
+    font-size: 12px;
+}
+
+@media (max-width: 1023px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .sidebar {
+        position: fixed;
+        left: -200px;
+        top: 60px;
+        width: 200px;
+        height: calc(100vh - 60px);
+        border-right: 1px solid #333;
+        overflow-y: auto;
+        z-index: 1000;
+    }
+
+    .sidebar.active {
+        left: 0;
+    }
+
+    .cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 767px) {
+    .header h1 {
+        font-size: 18px;
+    }
+
+    .cards-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .table {
+        font-size: 12px;
+    }
+
+    .table th,
+    .table td {
+        padding: 8px 5px;
+    }
+}

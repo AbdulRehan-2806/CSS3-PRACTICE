@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student-Management-Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <h1>Student Management Dashboard</h1>
+            <button class="menu-toggle" id="menuToggle"> Menu</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar" id="sidebar">
+            <nav class="nav-menu">
+                <a href="#dashboard" class="nav-item active"> Dashboard</a>
+                <a href="#students" class="nav-item"> Students</a>
+                <a href="#courses" class="nav-item"> Courses</a>
+                <a href="#grades" class="nav-item"> Grades</a>
+                <a href="#attendance" class="nav-item"> Attendance</a>
+                <a href="#reports" class="nav-item"> Reports</a>
+                <a href="#settings" class="nav-item"> Settings</a>
+            </nav>
+        </aside>
+
+      
+        <main class="main-content">
+            <section class="section">
+                <h2>Dashboard Overview</h2>
+                <div class="cards-grid">
+                    <div class="card">
+                        <div class="card-icon"></div>
+                        <h3>Total Students</h3>
+                        <p class="card-number">245</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon"></div>
+                        <h3>Active Courses</h3>
+                        <p class="card-number">12</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon"></div>
+                        <h3>Avg. Grade</h3>
+                        <p class="card-number">87%</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon"> </div>
+                        <h3>Attendance</h3>
+                        <p class="card-number">94%</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>Recent Students</h2>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Student ID</th>
+                            <th>Name</th>
+                            <th>Course</th>
+                            <th>Grade</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>S001</td>
+                            <td>John Doe</td>
+                            <td>Web Development</td>
+                            <td>A</td>
+                            <td><span class="status active">Active</span></td>
+                        </tr>
+                        <tr>
+                            <td>S002</td>
+                            <td>Jane Smith</td>
+                            <td>Data Science</td>
+                            <td>A+</td>
+                            <td><span class="status active">Active</span></td>
+                        </tr>
+                        <tr>
+                            <td>S003</td>
+                            <td>Mike Johnson</td>
+                            <td>Web Development</td>
+                            <td>B</td>
+                            <td><span class="status active">Active</span></td>
+                        </tr>
+                        <tr>
+                            <td>S004</td>
+                            <td>Sarah Williams</td>
+                            <td>Automata Theory</td>
+                            <td>A-</td>
+                            <td><span class="status inactive">Inactive</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+
+</body>
+</html>
+
