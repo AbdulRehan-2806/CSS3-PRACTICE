@@ -1,0 +1,27 @@
+/* Moving ball: left -> right -> left (infinite) */
+.track {
+	width: 300px;
+	height: 60px;
+	position: relative;
+}
+
+.ball {
+	width: 40px;
+	height: 40px;
+	background: #9b0909;
+	border-radius: 50%;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	animation-name: move;
+	animation-duration: 2s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+
+@keyframes move {
+	0% { left: 0; }
+	50% { left: calc(100% - 40px); }
+	100% { left: 0; }
+}
