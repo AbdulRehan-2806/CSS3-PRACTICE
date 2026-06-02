@@ -1,0 +1,26 @@
+/* Bouncing text container */
+.bounce-container {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.letter {
+    font-size: 48px;
+    font-weight: bold;
+    color: #333;
+    animation: bounce 0.6s ease-in-out infinite;
+}
+
+.letter:nth-child(1) { animation-delay: 0s; }
+.letter:nth-child(2) { animation-delay: 0.1s; }
+.letter:nth-child(3) { animation-delay: 0.2s; }
+.letter:nth-child(4) { animation-delay: 0.3s; }
+.letter:nth-child(5) { animation-delay: 0.4s; }
+.letter:nth-child(6) { animation-delay: 0.3s; }
+.letter:nth-child(7) { animation-delay: 0.2s; }
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-30px); }
+}
