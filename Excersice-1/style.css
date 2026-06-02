@@ -1,0 +1,23 @@
+.nav{
+    display: flex;
+    margin: 100px;
+    color: aquamarine;
+    padding: 20px;
+    background-color: brown;
+    justify-content: space-evenly;
+    width : 600px
+}
+
+.nav div{
+    margin: 20px;
+    padding: 10px
+}
+
+@media  (max-width: 768px){
+    .nav{
+        flex-direction: column;
+        width: 150px;
+    }
+}
+
+
