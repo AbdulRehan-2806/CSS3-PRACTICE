@@ -1,0 +1,16 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.img-container{
+    background-color: antiquewhite;
+}
+
+.img-container img{
+    transition: transform 0.3s ease;
+}
+
+.img-container img:hover{
+    transform: scale(1.2);
+}
