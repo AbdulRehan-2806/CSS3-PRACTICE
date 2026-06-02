@@ -1,0 +1,59 @@
+body{
+    display: flex;
+    align-items: center;
+}
+
+.student-card{
+    width: 600px;
+    height: 300px;
+    background-color: rgb(43, 4, 30);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+    padding: 16px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+.student-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    justify-content: space-around;
+    margin: 10px;
+}
+.student-img img{
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+}
+.student-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
+}
+.student-name{
+    font-size: 30px;
+    color: aliceblue;
+    margin: 0;
+}
+h2,h3{
+    color: white;
+    margin: 0;
+}
+@media only screen and(max-width:600px)
+{
+    .student-card{
+        flex-direction: column;
+        width: 200px;
+        height: 400px
+    }
+    .student-img{
+        width:100%;
+        height:auto;
+    }
+}
